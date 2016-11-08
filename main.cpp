@@ -58,6 +58,7 @@ int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
     TetrixWindow window;
+    window.showMaximized();
     window.show();
     qsrand(QTime(0,0,0).secsTo(QTime::currentTime()));
     return app.exec();
